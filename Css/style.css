@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.parent {
+    
+    font-size: large;
+}
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/*small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/*medium*/
+@media (min-width: 992px) {
+    .container {
+        width:970px;
+    }
+}
+/*large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.header1 {
+    padding: 20px;
+}
+.header1 {
+    justify-content: space-between;
+    display: flex;
+}
+.header1 .logo_container:hover {
+    background-color: rgb(213, 250, 1);
+}
+.header1 .bars_container:hover {
+    background-color: rgb(213, 250, 1);
+}
+.parent .header1 .bars_container:hover  .parent .header1 .bars_list {
+    background-color: rgb(213, 250, 1);
+}
+.header1 .bars_container {
+    transition: background-color .5s;
+    position: absolute;
+    top: 40px; left: 90%;
+}
+.header1 .logo_container {
+    transition: background-color .5s;
+    height: 60px;
+    width: 60px;
+    
+    
+}
+#bars_list {
+    display:inline-block ;
+    align-items:center;
+    position: relative;
+    margin-right: 100px;
+    position: absolute;
+    top: 60px;
+    left: 87%;
+    transition: background-color .5s;
+}
+li:hover {
+    padding-left: 15px;
+}
+li {
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-bottom: dashed red;
+    transition: background-color .5s;
+}
+.landing {
+    position: absolute;
+    top: 90px; left:10%; right: 10%; bottom: 10%;
+    
+    background-image: url(../images/hack.jpg);
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+
